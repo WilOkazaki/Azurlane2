@@ -2,8 +2,8 @@ export const Movies = [
     {
         name: "Sakura Card Captors",
         desc: "lorem",
-        titleImage: "",
-        Image: "1.jpg",
+        titleImage: "2.jpg",
+        Image: "1.jpeg",
         category: "Romantico",
         language: "Español",
         year: "Romantico",
@@ -13,9 +13,9 @@ export const Movies = [
         rewiews: 23
     },
     {
-        name: "Sakura Card Captors",
+        name: "Flash",
         desc: "lorem",
-        titleImage: "",
+        titleImage: "1.jpg",
         Image: "2.jpg",
         category: "Romantico",
         language: "Español",
