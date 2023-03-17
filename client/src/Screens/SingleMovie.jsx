@@ -9,10 +9,10 @@ function SingleMovie() {
     const movie = Movies.find((movie) => movie.name === id)
   return (
     <Layout>
-      singlepage
-      <MovieInfo movie={movie}/>
+    
+    <MovieInfo movie={movie}/>
 
-    </Layout>
+  </Layout>
   )
   
   

@@ -1,7 +1,7 @@
 export const Movies = [
     {
         name: "Sakura Card Captors",
-        desc: "lorem",
+        descp: "loremnsdjnaslkdnlasndansdjnadjasdjhajdfhjfhjsefnsdjfeshfjnjlnhsjfggfjgj",
         titleImage: "2.jpg",
         Image: "1.jpeg",
         category: "Romantico",
@@ -14,7 +14,7 @@ export const Movies = [
     },
     {
         name: "Flash",
-        desc: "lorem",
+        descp: "loremakldnlksadfejfejfmksefijewfjierjgioterjpiwejpiowejrowejjf",
         titleImage: "1.jpg",
         Image: "2.jpg",
         category: "Super Heroes",
