@@ -7,10 +7,15 @@ import Layout from '../Layout/Layout'
 function SingleMovie() {
     const {id} = useParams()
     const movie = Movies.find((movie) => movie.name === id)
-  return <Layout>
-    <MovieInfo movie={movie}/>
+  return (
+    <Layout>
+      singlepage
+      <MovieInfo movie={movie}/>
 
-  </Layout>
+    </Layout>
+  )
+  
+  
     
   
 }
