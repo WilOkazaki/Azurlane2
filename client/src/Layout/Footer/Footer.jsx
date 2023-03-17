@@ -100,15 +100,15 @@ function Footer() {
                     </Link>
                     <p className='leading-7 text-sm text-border mt-3 '>
                         <span>
-                        Hecho por Wilmer Villarreal, ci 18350430 <br/> Carvajal, Estado Trujillo. 2023
+                            Wilmer V., Salvador B. y Manuel E. <br/> Trujillo, Estado Trujillo. 2023
                         </span>
                         <br/> 
                         <span>
-                            telf: 0416-3772567
+                            Prof.Brian Santaeliz
                         </span>
                         <br/>
                         <span>
-                            email: okazakisaito2012@gmail.com
+                            Universidad Valle del Momboy
                         </span>
 
                     </p>
