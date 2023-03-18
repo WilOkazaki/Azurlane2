@@ -10,14 +10,7 @@ function Footer() {
                     name: "Inicio",
                     link: "/"
                 },
-                {
-                    name: "Nosotros",
-                    link: "/about-us"
-                },
-                {
-                    name: "Contacto",
-                    link: "/contact-us"
-                },
+             
                 {
                     name: "Películas",
                     link: "/movies"
@@ -52,18 +45,12 @@ function Footer() {
                     name: "Dasboard",
                     link: "/dasboard"
                 },
-                {
-                    name: "Mis Favoritos",
-                    link: "/favorite"
-                },
+               
                 {
                     name: "Perfil",
                     link: "/profile"
                 },
-                {
-                    name: "Cambiar Contraseña ",
-                    link: "/password"
-                },
+               
             ],
         },
     ];
