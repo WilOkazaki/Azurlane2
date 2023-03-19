@@ -1,0 +1,102 @@
+------Auth------
+
+POST - /api/auth/singUp
+ruta para registrar un nuevo usuario, devuelve un json con los datos del nuevo usuario cuando todo esta correcto
+recibe
+{
+    email: string
+    username: string
+    password: string
+}
+
+
+POST - /api/auth/singIn
+ruta para que el usuario inicie sesion, deviuelve el token del usuario que inicie sesion
+recibe
+{
+    email: string
+    password: string
+}
+
+
+------Users------
+GET - /api/users
+devuelve la lista de todos los usuarios registrados, solo el administrador puede acceder a esta ruta
+
+GET - /api/users/:id
+descripcion: devuelve los datos de un usuario en especifico, se necesita iniciar sesion para acceder, solo el administrador y el mismo usuario pueden acceder
+recibe el id {:id} del usuario a traves de la ruta
+
+POST - /api/users
+ruta para crear un nuevo usuario, solo puede ser usada por el admin, devuelve los datos del usuario creado cuando se ejecuta de forma exitosa
+recibe
+{
+    email: string
+    username: string
+    password: string
+}
+
+PUT - /api/users/:id
+ruta para editar los datos de un usuario, puede ser usada por el edministrador o el mismo usuario que quiera editar sus propios datos. Recibe a traves de la url el id {:id} del usuario a editar
+recibe
+{
+    email: string (opcional)
+    username: string (opcional)
+    password: string (opcional)
+}
+
+DELETE - /api/users/:id
+este endpoint es para eliminar un usuario, recibe el id del usuario {:id} a traves de la ruta, esta accions solo la puede realizar el admin. 
+
+
+------Movies------
+GET - /api/movies
+ruta que devuelve la lista de todas las peliculas
+
+GET - /api/movies/:movieId
+ruta que devuelve la informacion de una pelicula en especifico, recibe el id de la pelicula a traves de la url {:movieId}
+
+POST - /api/movies
+ruta que se usa para crear las peliculas, solo puede ser accedida por el administrador
+recibe
+{
+    titulo: String
+    genero: String
+    sinopsis: String
+    publicacion: String
+    actores: String
+    direccion: String
+    productora: String
+    estatus: String
+    imagen: Archivo png o jpg
+}
+
+PUT - /api/movies/:movieId
+ruta para editar los datos de una pelicula, se le pasa el id de la pelicula por la url, solo el admin tiene acceso
+recibe
+{
+    titulo: String (opcional)
+    genero: String (opcional)
+    sinopsis: String (opcional)
+    publicacion: String (opcional)
+    actores: String (opcional)
+    direccion: String (opcional)
+    productora: String (opcional)
+    estatus: String (opcional)
+}
+
+DELETE - /api/movies/:movieId
+ruta para eliminar una pelicula, recibe el id de la pelicula a traves de la url
+
+POST - /api/movies/review/:movieId
+ruta para crear un review a una pelicula, se le pasa el id de la pelicula por la url, se debe haber iniciado sesion para hacer reviews
+recibe
+{
+    review: String
+}
+
+GET - /api/movies/review/:movieId
+devuelve la lista de reviews de una pelicula, tambien los datos de la pelicula. se debe enviar el id de la pelicula en la url
+
+DELETE - /api/movies/review/:reviewId
+ruta para eliminar una review, se debe enviar el id de esta a traves de la url
