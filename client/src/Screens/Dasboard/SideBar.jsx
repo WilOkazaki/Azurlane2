@@ -32,7 +32,7 @@ function SideBar({children}) {
       
     ];
     const active ="bg-dryGray text-subMain"
-    const hover ="hover:text-while hover:bg-main"
+    const hover ="hover:text-white hover:bg-main"
     const inActive ="rounded font-medium text-sm transitions flex gap-3 items-center p-4"
     const Hover =({isActive}) => {
         isActive ? `${active} ${inActive}`: `${inActive} ${hover}`
@@ -42,7 +42,7 @@ function SideBar({children}) {
     <Layout>
         <div className='min-h-screen container mx-auto px-2'>
             <div className='xl:grid grid-cols-8 gap-10 items-start md:py-12 py-6'>
-                <div className='col-span-2 sticky bg-dry border border-gray-600 p-6 rounded-md xl:mb-0 mb-5'>
+                <div className='col-span-2 sticky bg-dry border border-gray-800 p-6 rounded-md xl:mb-0 mb-5'>
                     {
                         SideLinks.map((link, index)=> (
                             <NavLink to={link.link} key={index} className={Hover}>
@@ -55,7 +55,6 @@ function SideBar({children}) {
                     {children}
                 </div>
             </div>
-
         </div>
     </Layout>
   )

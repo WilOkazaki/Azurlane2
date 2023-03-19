@@ -21,7 +21,7 @@ function MovieInfo({ movie }) {
             className="w-full h-full object-cover" 
             />
             </div>
-            <div className='col-sapn-2 md:grid-cols-5 gap-4 items-center'>
+            <div className='col-span-2 md:grid-cols-5 gap-4 items-center'>
               <div className='col-span-3 flex flex-col gap-10'>
                 {/*Titulo*/}
                 <h1 className='xl:text-4xl capitalize font-sans text-2xl font-bold'>

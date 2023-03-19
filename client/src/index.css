@@ -34,7 +34,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .flex-btn{
-    @apply flex  justify-between items-center;
+    @apply flex justify-between items-center;
 }
 
 .transitions{

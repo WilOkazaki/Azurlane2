@@ -8,6 +8,9 @@ import Login from "./Screens/Login";
 import Register from "./Screens/Register";
 import Profile from "./Screens/Dasboard/Profile";
 import WatchPage from "./Screens/WatchPage";
+import MovieList from "./Screens/Dasboard/Admin/MovieList";
+import AddMovie from "./Screens/Dasboard/Admin/AddMovie";
+
 
 function App() {
  
@@ -21,6 +24,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/movielist" element={<MovieList />} />
+        <Route path="/addmovie" element={<AddMovie />} />
     </Routes>
   );
 }

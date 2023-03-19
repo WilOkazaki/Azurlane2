@@ -3,7 +3,7 @@ import { Autoplay} from 'swiper'
 import {Swiper, SwiperSlide } from 'swiper/react'
 import { Movies } from '../../Data/MovieData'
 import { Link } from 'react-router-dom'
-import { FaHeart } from 'react-icons/fa'
+
 import FlexMovieItems from '../FlexMovieItems'
 
 function Banner() {
@@ -37,9 +37,7 @@ function Banner() {
                                 <Link to={`/movie/${movie.name}`} className="bg-subMain hover:text-main transitions text-white px-8 py-3 rounded font-medium sm:text-sm text-xs">
                                     Ver Ahora
                                 </Link>
-                                <button className='bg-white hover:text-subMain transitions text-white px-4 py-3 rounded text-sm bg-opacity-30'>
-                                    <FaHeart />
-                                </button>
+                             
                             </div>
                         </div>
                     </SwiperSlide>
